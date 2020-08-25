@@ -9,3 +9,70 @@ $font-weight-light: 300
 $font-weight-regular: 400
 $font-weight-bold: 600
 $font-base-size: 16px
+
+/*
+ * BASE LAYOUT
+ */
+*
+  box-sizing: border-box
+  font-family: $font-stack
+  color: $col-neutral-dark
+body
+  margin: 0
+  font-size: $font-base-size
+h1
+  text-transform: uppercase
+  font-size: 2.5em
+  letter-spacing: 10px
+  line-height: 1.1
+  margin-bottom: 0
+p
+  color: $col-primary-soft
+  line-height: 1.5
+  font-size: 0.9em
+.font-light
+  font-weight: $font-weight-light
+  color: $col-primary-soft
+
+// HEADER
+header
+  padding: 30px
+header img
+  height: 20px
+
+// IMAGE
+.image-area
+  background: url("../../assets/hero-mobile.jpg") no-repeat
+  background-position: top center
+  background-size: cover
+  height: 250px
+.image-area img
+  width: 100%
+
+// TEXT
+.main-text-content
+  text-align: center
+  padding: 30px
+
+// FORM
+form
+  position: relative
+input
+  padding: 15px 30px
+  border: 1px solid lightgrey
+  border-radius: 100px
+  width: 100%
+  color: $col-neutral-dark
+input::placeholder
+  color: $col-primary-soft
+  opacity: 0.4
+button
+  position: absolute
+  top: 0
+  right: 0
+  height: 45px
+  width: 65px
+  border-radius: 100px
+  border: none
+  color: white
+  background: $col-gradient-bright

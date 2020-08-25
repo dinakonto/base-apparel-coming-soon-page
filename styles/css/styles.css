@@ -1,3 +1,86 @@
+/* * BASE LAYOUT
+ * */
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #413a3a;
+}
 
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 10px;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+p {
+  color: #ce9797;
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+.font-light {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+header {
+  padding: 30px;
+}
+
+header img {
+  height: 20px;
+}
+
+.image-area {
+  background: url("../../assets/hero-mobile.jpg") no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 250px;
+}
+
+.image-area img {
+  width: 100%;
+}
+
+.main-text-content {
+  text-align: center;
+  padding: 30px;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  padding: 15px 30px;
+  border: 1px solid lightgrey;
+  border-radius: 100px;
+  width: 100%;
+  color: #413a3a;
+}
+
+input::placeholder {
+  color: #ce9797;
+  opacity: 0.4;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 45px;
+  width: 65px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
 
 /*# sourceMappingURL=styles.css.map */
