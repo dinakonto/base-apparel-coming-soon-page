@@ -60,14 +60,16 @@ header img {
 
 form {
   position: relative;
+  text-align: left;
 }
 
 input {
-  padding: 17px 30px;
+  padding: 17px 20px;
   border: 1px solid lightgrey;
   border-radius: 100px;
   width: 100%;
   color: #413a3a;
+  margin-bottom: 10px;
 }
 
 input::placeholder {
@@ -77,11 +79,12 @@ input::placeholder {
 
 input:hover, input:focus {
   border-width: 2px;
-  padding: 17px 30px;
+  padding: 16px 30px;
   outline: none;
 }
 
 button {
+  z-index: 2;
   position: absolute;
   top: 0;
   right: 0;
@@ -113,6 +116,20 @@ button:active {
   transform: scale(1.05);
 }
 
+form .error {
+  color: #f96262;
+  padding-left: 30px;
+}
+
+form .input-error {
+  border: 2px solid #f96262;
+  padding: 16px 30px;
+  color: #413a3a;
+  background: url("../../assets/icon-error.svg") no-repeat;
+  background-position: calc(100% - 70px) 50%;
+  background-size: 25px;
+}
+
 /* * RESPONSIVE CHANGES FOR:
  * * Medium viewports, over 600px wide
  * */
@@ -142,6 +159,20 @@ button:active {
   button {
     height: 54px;
     width: 100px;
+  }
+
+  input:hover, input:focus {
+    padding: 17px 30px;
+  }
+
+  form .error {
+    font-size: smaller;
+  }
+
+  form .input-error {
+    padding: 17px 30px;
+    background-position: calc(100% - 110px) 50%;
+    background-size: 25px;
   }
 }
 /* * RESPONSIVE CHANGES FOR:
