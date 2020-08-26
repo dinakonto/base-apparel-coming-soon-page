@@ -88,15 +88,9 @@ button {
 }
 
 /* * RESPONSIVE CHANGES FOR:
- * * Large viewports, over 850px wide
+ * * Medium viewports, over 600px wide
  * */
-@media screen and (min-width: 850px) {
-  body {
-    display: grid;
-    grid-template-columns: 58% 42%;
-    grid-template-rows: 150px 1fr;
-  }
-
+@media screen and (min-width: 600px) {
   h1 {
     font-size: 4em;
   }
@@ -106,14 +100,38 @@ button {
     font-size: 1em;
   }
 
+  header img {
+    height: 30px;
+  }
+
+  form {
+    margin-top: 40px;
+  }
+
+  input {
+    padding: 18px 30px;
+    font-size: 1em;
+  }
+
+  button {
+    height: 54px;
+    width: 100px;
+  }
+}
+/* * RESPONSIVE CHANGES FOR:
+ * * Large viewports, over 850px wide
+ * */
+@media screen and (min-width: 850px) {
+  body {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 150px 1fr;
+  }
+
   header {
     width: 450px;
     margin: 0 auto;
     padding: 65px 0;
-  }
-
-  header img {
-    height: 30px;
   }
 
   .image-area {
@@ -133,20 +151,6 @@ button {
   .main-text-content {
     text-align: left;
     padding: 30px 0;
-  }
-
-  form {
-    margin-top: 40px;
-  }
-
-  input {
-    padding: 18px 30px;
-    font-size: 1em;
-  }
-
-  button {
-    height: 54px;
-    width: 100px;
   }
 }
 

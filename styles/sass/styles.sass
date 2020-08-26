@@ -83,6 +83,29 @@ button
 
 /*
  * RESPONSIVE CHANGES FOR:
+ * Medium viewports, over 600px wide
+ */
+@media screen and (min-width: 600px)
+  h1
+    font-size: 4em
+  p
+    line-height: 1.8
+    font-size: 1em
+  // HEADER
+  header img
+    height: 30px
+  //FORM
+  form
+    margin-top: 40px
+  input
+    padding: 18px 30px
+    font-size: 1em
+  button
+    height: 54px
+    width: 100px
+
+/*
+ * RESPONSIVE CHANGES FOR:
  * Large viewports, over 850px wide
  */
 @media screen and (min-width: 850px)
@@ -90,18 +113,11 @@ button
     display: grid
     grid-template-columns: 58% 42%
     grid-template-rows: 150px 1fr
-  h1
-    font-size: 4em
-  p
-    line-height: 1.8
-    font-size: 1em
   // HEADER
   header
     width: 450px
     margin: 0 auto
     padding: 65px 0
-  header img
-    height: 30px
   // IMAGE
   .image-area
     background: url("../../assets/hero-desktop.jpg") no-repeat
@@ -117,12 +133,3 @@ button
   .main-text-content
     text-align: left
     padding: 30px 0
-  //FORM
-  form
-    margin-top: 40px
-  input
-    padding: 18px 30px
-    font-size: 1em
-  button
-    height: 54px
-    width: 100px
