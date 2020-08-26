@@ -83,8 +83,12 @@ button {
   width: 65px;
   border-radius: 100px;
   border: none;
-  color: white;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  font-size: 22px;
+}
+
+button svg path {
+  color: white;
 }
 
 /* * RESPONSIVE CHANGES FOR:
